@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal site with mostly fictional maps and side projects"
+    />
+    <meta
+      name="keywords"
+      content="maps, geography, geofiction, cartography, worldbuilding, personal"
+    />
+    <title>Lankarta Project - Fictional Maps and More</title>
+    <link rel="shortcut icon" href="assets/earth.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/styles/defaultstyle.css" />
+    <link rel="stylesheet" href="/styles/navbar2025.css" />
+    <link rel="stylesheet" href="/styles/topbutton.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <script type="text/javascript" src="/scripts/navbar.js"></script>
+    <script type="text/javascript" src="/scripts/footer.js"></script>
+    <script type="text/javascript" src="/scripts/styleswitcher.js"></script>
+    <script type="text/javascript" src="/scripts/lastupdateddate.js"></script>
+
+    <style>
+      .outer-image-container {
+        width: 100%;
+        min-height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+      }
+
+      .image-container {
+        position: relative;
+        width: 300px;
+        height: 250px;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-shadow: 1px 1px 4px black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <noscript>
+        <div class="no-js-navbar">
+          <ul>
+            <li>
+              <a href="/index.html">
+                <img
+                  src="assets/lankarta-logo-monowhite.png"
+                  alt="Lankarta Logo Wide"
+              /></a>
+            </li>
+            <li><a href="/sitemap.html">Sitemap</a></li>
+          </ul>
+        </div>
+      </noscript>
+    </nav>
+
+    <div class="container">
+      <button id="go-to-top-button">
+        <div id="go-to-top-button-icon"></div>
+        <noscript>
+          <button id="go-to-top-button">
+            <a href="#" id="go-to-top-button-icon"></a>
+          </button>
+        </noscript>
+      </button>
+
+      <div class="item item-12">
+        <div class="thumbnails">
+          <a href="mymaps/maps-2010to2020.html#dosdedos"
+            ><img src="mymaps/thumbnails/thumb-dosdedosonline.png"
+          /></a>
+          <a href="mymaps/maps-2010to2020.html#fakeeiffeltower"
+            ><img src="mymaps/thumbnails/thumb-fakeeiffeltowercompilation.png"
+          /></a>
+          <a href="mymaps/maps-nationstates.html#volicamap"
+            ><img src="mymaps/thumbnails/thumb-volicamainmapcompressed.png"
+          /></a>
+          <a href="mymaps/maps-nationstates.html#volicaadmin"
+            ><img src="mymaps/thumbnails/thumb-volicaadmindivision.png"
+          /></a>
+          <a href="worldreview/visited.html"
+            ><img src="mymaps/thumbnails/thumb_europevisited.png"
+          /></a>
+          <a href="mymaps/maps-2010to2020.html#tomanocostelankarta"
+            ><img src="mymaps/maps/lankartatomanocostemap.jpg"
+          /></a>
+          <a href="/shrines/zamosc.html"
+            ><img src="mymaps/thumbnails/thumb_zamojszczyzna1.png"
+          /></a>
+          <a href="mymaps/maps-pre2010.html#rzeszow"
+            ><img src="mymaps/thumbnails/thumb-fakerzeszow.png"
+          /></a>
+          <a href="mymaps/maps-pre2010.html#olesnica"
+            ><img src="mymaps/thumbnails/thumb-fikcyjnaolesnica.png"
+          /></a>
+          <a href="mymaps/maps-nationstates.html#estiaglobe"
+            ><img src="mymaps/thumbnails/thumb-estiaglobe.png"
+          /></a>
+          <a href="mymaps/maps-2010to2020.html#mazurias"
+            ><img src="mymaps/thumbnails/thumb-mazurias.png"
+          /></a>
+          <a href="maps-2010to2020.html#luaramante"
+            ><img src="mymaps/thumbnails/thumb-luaramante.png"
+          /></a>
+          <a href="mymaps/maps-pre2010.html#districtonisland"
+            ><img src="mymaps/thumbnails/thumb-districtonisland.png"
+          /></a>
+          <a href="mymaps/maps-realworldqna.html"
+            ><img src="mymaps/maps/europefrommemory.png"
+          /></a>
+          <a href="mymaps/maps-realworldqna.html"
+            ><img src="mymaps/maps/culturalworldregions.png"
+          /></a>
+          <a href="mymaps/maps-pre2010.html#okolicetarnogaja"
+            ><img src="mymaps/maps/okolicetarnogaja.webp"
+          /></a>
+          <a href="mymaps/maps-pre2010.html#carowice"
+            ><img src="mymaps/maps/carowicetown.webp"
+          /></a>
+          <a href="mymaps/maps-2010to2020.html#tomanocoste"
+            ><img src="mymaps/thumbnails/thumb-biggestmapcompressed.png"
+          /></a>
+          <a href="mymaps/maps-2010to2020.html#coastalcity"
+            ><img src="mymaps/thumbnails/thumb-coastalcity1.png"
+          /></a>
+          <a href="mymaps/maps-nationstates.html#velkavolicaroadmap"
+            ><img src="mymaps/thumbnails/thumb-velkavolica_roadmap.png"
+          /></a>
+          <a href="mymaps/maps-nationstates.html#corasaisland"
+            ><img src="mymaps/thumbnails/thumb-corasaisland.png"
+          /></a>
+        </div>
+      </div>
+
+      <div class="item item-4">
+        <div class="outer-image-container">
+          <div class="image-container">
+            <a href="mymaps">
+              <img src="assets/lankartaaddark1.gif" alt="Lankarta Ad Dark 1" />
+              <div class="overlay-text">That's Just A Demo</div>
+            </a>
+          </div>
+        </div>
+        <h1>Sitemap</h1>
+        <ol class="sitemap">
+          <li><b>This main page</b></li>
+          <li>
+            <b>SITEMAP IN PREPARATION</b>
+          </li>
+          <li>
+            <a href="https://neocities.org/site/lankarta-project"
+              >My Neocities Profile</a
+            >
+          </li>
+          <li>
+            <details>
+              <summary>
+                <a
+                  href="https://bsky.app/profile/lankarta-project.neocities.org"
+                  >My Bluesky Profile</a
+                >
+              </summary>
+              <div class="centeredimage">
+                <img
+                  src="assets/butterflymeme.jpg"
+                  alt="is this twitter meme"
+                />
+              </div>
+            </details>
+          </li>
+        </ol>
+        <div class="buttonsandwebrings">
+          <a
+            target="_blank"
+            href="https://lankarta-project.neocities.org/mybuttons/lankartabuttongif.gif"
+            ><img
+              src="assets/lankartabuttongif.gif"
+              alt="lankarta website button gif"
+          /></a>
+          <a
+            target="_blank"
+            href="https://lankarta-project.neocities.org/mybuttons/lankartabuttonstatic.png"
+            ><img
+              src="assets/lankartabuttonstatic.png"
+              alt="lankarta website button static"
+          /></a>
+        </div>
+        <div class="buttonsandwebrings">
+          <script src="https://nuthead.neocities.org/ring/ring.js"></script>
+          <div id="FCWL">
+            <script
+              type="text/javascript"
+              src="https://beaus-silly-folder.nekoweb.org/my-webrings/FCWL/onionring-variables.js"
+            ></script>
+            <script
+              type="text/javascript"
+              src="https://beaus-silly-folder.nekoweb.org/my-webrings/FCWL/widgets/pol.js"
+            ></script>
+          </div>
+          <a href="https://info.flagcounter.com/ZzBL"
+            ><img
+              src="https://s01.flagcounter.com/count2/ZzBL/bg_F2F2F5/txt_000000/border_CCCCCC/columns_3/maxflags_21/viewers_0/labels_0/pageviews_1/flags_0/percent_0/"
+              alt="Flag Counter"
+              border="0"
+          /></a>
+          <div id="wcb" class="carbonbadge"></div>
+          <script>
+            const body = document.body;
+            const div = document.getElementById("wcb");
+            if (
+              body.dataset.theme === "dark" ||
+              body.dataset.theme === "funky"
+            ) {
+              div.classList.add("wcb-d");
+            }
+          </script>
+          <script
+            src="https://unpkg.com/website-carbon-badges@1.1.3/b.min.js"
+            defer
+          ></script>
+        </div>
+      </div>
+      <div class="item item-8">
+        <h1>Hi There / Cześć!</h1>
+        <p style="color: #33e; font-weight: bold; font-size: 1.5em">
+          Big changes in the technicalities!<br />Almost no new content yet...
+        </p>
+        <p>
+          My name is Thomas, I'm a map nerd from Poland🇵🇱🇪🇺 and this is my
+          simple personal website with old map doodles and such, hosted on
+          Neocities!
+        </p>
+        <p>
+          Even though I'm kinda busy, I wish I could be able to make much more
+          robust maps and the development of a new app that I named
+          <a href="aboutproject.html">Lankarta</a>, is my way too ambitious plan
+          to do it, just like my other <a href="myideas.html">ideas</a>. Sadly
+          it's very improbable that I'll be able to finish any of them, but at
+          least I'm trying to write them down, hence this website was created.
+        </p>
+        <p>
+          This website was started in 27th July 2024 thanks to
+          <a href="https://www.youtube.com/watch?v=rTSEr0cRJY8">this video</a>
+          of
+          <a href="https://youvegotkat.neocities.org/">You've Got Kat</a>
+          youtube channel. Thank you so much, I like the simplicity of the
+          webpage editor and freedom to write whatever html/css/js stuff without
+          any template! I would also like to give a shoutout to the author of
+          another, but much smaller youtuber <b>Geofiction</b> which, because of
+          <a href="https://www.youtube.com/watch?v=N4VZITqNVSc">this video</a>
+          (and the entire channel), inspired me to put out my hand-drawn
+          fictional maps into the internet!
+        </p>
+        <p style="color: #d00" ;>
+          Some big changes in the overall organization of the site are coming so
+          navigating this site is going to be clunky for a while.<br />
+          <b
+            >The settings also very much in alpha mode so beware and test it
+            out!</b
+          >
+        </p>
+        <div class="columns">
+          <div class="left">
+            <p>
+              This site have zero adult themes like nudity, gore or violence so
+              it's <b>completely SFW</b>, it's just a bunch of maps and doodles
+              after all. There is almost no offensive stuff except a few swear
+              words that I missed while writing some boring walls of texts, so
+              no minor will bother to read them anyway. Also the topic of
+              politics might appear, but it's written in a calm way.
+            </p>
+          </div>
+          <div class="right">
+            <a href="https://www.mabsland.com/Adoption.html" target="_blank"
+              ><img
+                src="assets/Censor_PGc.gif"
+                style="float: right; margin-left: 10px"
+                alt="Censor PGc"
+            /></a>
+          </div>
+        </div>
+        <p>
+          There is <b>no flashing lights</b> on this site, it's almost
+          completely static, except some gif buttons on
+          <a href="links.html">Links</a> page. I'm trying my best to learn how
+          to code accessible layouts and features, but it goes quite slow.
+        </p>
+      </div>
+      <div class="item item-12">
+        <div class="buttonsandwebrings">
+          <img
+            src="assets/neocitiesbutton.gif"
+            alt="neocities button"
+            width="88px"
+            height="31px"
+          />
+          <img src="assets/mobiles.png" alt="mobile friendly website button" />
+          <img src="assets/firefox2.gif" alt="firefox browser button" />
+          <img src="assets/theonion.gif" alt="the onion news button" />
+          <img src="assets/ifranview.gif" alt="ifranview button" />
+          <img src="assets/svg-8831.svg" alt="svg button" />
+          <img
+            src="assets/polskabettercallsaul-button.gif"
+            alt="polska better call saul meme button"
+          />
+          <img
+            src="assets/europeanunionloading-button.gif"
+            alt="european union loading meme button"
+          />
+          <img
+            src="assets/plheartua.gif"
+            alt="flag of poland heart shaped with ukraine button"
+          />
+          <img src="assets/palestine.gif" alt="free palestine button" />
+        </div>
+      </div>
+
+      <div class="item item-8">
+        <iframe
+          src="updatelog.html"
+          title="Update Log Window"
+          width="100%"
+          height="500px"
+          style="border: none"
+          onload="this.contentWindow.document.querySelector('div.topbar').style.display = 'none'; this.contentWindow.document.body.style.overflow = 'auto'"
+        ></iframe>
+        <p style="text-align: center; margin: 0 auto">
+          <a href="updatelog.html">Update Log</a> subpage link if iframes don't
+          work
+        </p>
+      </div>
+
+      <div class="item item-4">
+        <h1>Contact</h1>
+        <p>
+          <adress
+            >If you want to write anything to me you can either go to my
+            <a href="https://lankarta-project.atabook.org/"
+              >Atabook Guestbook</a
+            >
+            or e-mail me at
+            <a href="mailto:unitedvolicafoundation@gmail.com"
+              >unitedvolicafoundation@gmail.com</a
+            >
+            - this e-mail was made for
+            <a
+              href="https://lankarta-project.neocities.org/maps-nationstates#volicamap"
+              >Volican States</a
+            >
+            project purposes and I don't bother to make the new one for this
+            project until I finally start doing it.</adress
+          >
+        </p>
+        <p>
+          <a href="https://bsky.app/profile/lankarta-project.neocities.org">
+            Bluesky</a
+          >
+          is also a possible way, I need to have a reason to to there once in a
+          while ;)
+        </p>
+        <p>
+          I don't have to tell you please be nice, because you're all awesome
+          here on the Neocities!
+        </p>
+      </div>
+    </div>
+
+    <footer id="main-footer">
+      <noscript
+        >This site contains just a bunch of tiny javascript scripts, most of the
+        stuff should be perfectly readable with js disabled, if not, I sincerely
+        apologize. Have a nice day!
+      </noscript>
+    </footer>
+  </body>
+</html>

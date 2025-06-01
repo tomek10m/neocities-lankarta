@@ -1,0 +1,305 @@
+/* <uniquifier>: Use a unique and descriptive class name*/
+/* <weight>: Use a value from 100 to 900*/
+
+.noto-sans-regular {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.noto-sans-bold {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700; /* Bold */
+}
+
+/* Reset some basic styles for better cross-browser compatibility */
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Variables for different themes */
+
+body:not([data-theme]),
+body[data-theme="default"] {
+  --bg-color: #f1f1f1;
+  --container-item-bg-color: #d6d6d6;
+  --text-color: #333333;
+  --link-color: #2d75e9;
+  --link-visited-color: #9216cb;
+  --link-hover-color: rgba(51, 51, 119, 0.8);
+  --list-link-color: #080;
+}
+
+body[data-theme="dark"] {
+  --bg-color: #121212;
+  --container-item-bg-color: #1e1e1e;
+  --text-color: #e0e0e0;
+  --link-color: #72bbff;
+  --link-visited-color: #e7b3ff;
+  --link-hover-color: rgba(51, 51, 119, 0.8);
+  --list-link-color: #b0ffb0;
+}
+
+body[data-theme="grey2000"] {
+  --bg-color: #4c4c4c;
+  --container-item-bg-color: #5d5d5d;
+  --text-color: #e0e0e0;
+}
+
+body[data-theme="seasonal"] {
+  --bg-color: #f9e382;
+  --container-item-bg-color: #ffde5b;
+  --text-color: #333;
+}
+
+body[data-theme="funky"] {
+  --bg-color: #ff00ff;
+  --container-item-bg-color: #ff56bb;
+  --text-color: #ffff00;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flat layout */
+body.flat-layout * {
+  box-shadow: none !important;
+  transition: none !important;
+  animation: none !important;
+}
+
+/* Grid container */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 10px;
+  padding: 80px 10px 20px 10px; /* Adjust top padding to avoid overlap with fixed navbar */
+  max-width: 1200px;
+  min-width: 1fr;
+  margin: 0 auto;
+}
+
+.container a:hover {
+  background-color: var(--link-hover-color);
+  color: #fff;
+}
+
+/* Grid items */
+.item {
+  background-color: var(--container-item-bg-color);
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Linkbox are going to be modernized */
+.linkbox {
+  cursor: pointer;
+  max-width: 800px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+.linkbox:hover {
+  background-color: #ccc;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.thumbnails {
+  overflow: auto;
+  white-space: nowrap;
+  max-width: 85vw;
+  gap: 15px;
+}
+
+.thumbnails img {
+  margin-top: 20px;
+  max-height: 160px;
+  border-radius: 5px;
+}
+
+.box-info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
+
+.box-info .left {
+  text-align: left;
+}
+
+.box-info .right {
+  text-align: right;
+}
+
+/* Responsive grid items */
+@media (max-width: 899px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .item {
+    grid-column: span 12;
+  }
+}
+
+@media (min-width: 900px) {
+  .item-2 {
+    grid-column: span 2;
+  }
+  .item-3 {
+    grid-column: span 3;
+  }
+  .item-4 {
+    grid-column: span 4;
+  }
+  .item-5 {
+    grid-column: span 5;
+  }
+  .item-6 {
+    grid-column: span 6;
+  }
+  .item-7 {
+    grid-column: span 7;
+  }
+  .item-8 {
+    grid-column: span 8;
+  }
+  .item-9 {
+    grid-column: span 9;
+  }
+  .item-10 {
+    grid-column: span 10;
+  }
+  .item-11 {
+    grid-column: span 11;
+  }
+  .item-12 {
+    grid-column: span 12;
+  }
+}
+
+.centeredimage img {
+  max-width: 90%;
+  display: flex;
+  margin: 10px auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .centeredimage img {
+    width: 100%;
+  }
+}
+
+.buttonsandwebrings {
+  text-align: center;
+}
+
+.map {
+  max-width: 95%;
+  display: block;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  padding: 0;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+/* Reset default margin and padding */
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Specific styling for ul */
+ul {
+  list-style: disc; /* or another style like circle or square */
+  padding-left: 20px; /* Adjust based on your layout needs */
+}
+
+/* Paragraph styling */
+p {
+  margin-bottom: 1em; /* Example margin, adjust as needed */
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+.section-list a,
+.map-list a,
+.idea-list a {
+  margin-top: -80px;
+  text-decoration: none;
+  color: var(--list-link-color);
+}
+
+.section-list li::marker {
+  content: "\f00b  "; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+
+.map-list li::marker {
+  content: "\f278  "; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+
+.idea-list li::marker {
+  content: "\f129  "; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+
+.question-list a {
+  text-decoration: none;
+}
+
+.question-list li::marker {
+  content: "\f128  "; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+
+.links-list li::marker {
+  content: "\f08e  "; /* FontAwesome Unicode */
+  font-family: FontAwesome;
+}
+
+.img-context {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.img-title {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.shrine-title {
+  text-align: center;
+}

@@ -1,0 +1,36 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  line-height: 1.6;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.container-articles {
+  display: flex;
+  width: 100vw;
+  margin-top: 80px;
+}
+
+.article-list {
+  flex-basis: 40%;
+}
+
+.articles {
+  flex-basis: 60%;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+#main-footer {
+  bottom: 0;
+}

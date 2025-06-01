@@ -1,0 +1,71 @@
+body[data-theme="default"] {
+  --go-to-top-button-bg-color: rgba(0, 51, 102, 0.7);
+  --go-to-top-button-bg-color-hover: rgba(0, 51, 102, 1);
+}
+
+body[data-theme="dark"] {
+  --go-to-top-button-bg-color: rgba(60, 60, 60, 0.95);
+  --go-to-top-button-bg-color-hover: rgb(82, 82, 82);
+}
+
+body[data-theme="seasonal"] {
+  --go-to-top-button-bg-color: rgba(214, 101, 8, 0.95);
+  --go-to-top-button-bg-color-hover: rgba(214, 101, 8, 1);
+}
+
+body[data-theme="funky"] {
+  --go-to-top-button-bg-color: rgba(107, 5, 107, 0.95);
+  --go-to-top-button-bg-color-hover: rgba(107, 5, 107, 1);
+}
+body[data-theme="flat-layout"] {
+  --go-to-top-button-bg-color: rgba(0, 51, 102, 0.7);
+  --go-to-top-button-bg-color-hover: rgba(0, 51, 102, 1);
+}
+body:not([data-theme]) {
+  --go-to-top-button-bg-color: rgba(0, 51, 102, 0.7);
+  --go-to-top-button-bg-color-hover: rgba(0, 51, 102, 1);
+}
+
+#go-to-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: var(--go-to-top-button-bg-color);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 986;
+}
+#go-to-top-button:hover {
+  background-color: var(--go-to-top-button-bg-color-hover);
+}
+
+#go-to-top-button:hover ~ #go-to-top-button-icon {
+  filter: drop-shadow (0 0 5px rgba(255, 255, 255, 0.5));
+}
+
+#go-to-top-button-icon {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 14px solid white;
+}
+
+@media screen and (min-width: 800px) {
+  #go-to-top-button {
+    width: 90px;
+  }
+  #go-to-top-button::after {
+    content: "Go top";
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+}

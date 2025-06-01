@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Not Found, Not Fond</title>
+    <link rel="stylesheet" href="/styles/defaultstyle.css" />
+    <script type="text/javascript" src="/scripts/styleswitcher.js"></script>
+    <style>
+      body {
+        background-size: 400% 400%;
+        background-image: linear-gradient(
+          45deg,
+          rgba(255, 255, 255, 0.5) 0%,
+          rgba(155, 155, 155, 0.5) 25%,
+          rgba(103, 103, 103, 0.5) 50%,
+          rgba(44, 44, 44, 0.5) 75%,
+          rgba(14, 14, 14, 0.5) 100%
+        );
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .notfoundwindow {
+        max-width: 95vw;
+        margin: 10vh auto;
+        padding: 20px;
+        text-align: center;
+        font-family: sans-serif;
+        box-sizing: border-box;
+        background-color: var(--container-item-bg-color);
+        color: var(--text-color);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .logo {
+        width: 40%;
+        -webkit-filter: brightness(70%);
+        filter: brightness(70%);
+      }
+    </style>
+    <script>
+      let wasClicked = false;
+      document.addEventListener("DOMContentLoaded", () => {
+        const body = document.body;
+        const logo = document.querySelector(".logo");
+
+        logo.addEventListener("click", () => {
+          if (!wasClicked) {
+            wasClicked = true;
+            body.classList.toggle("animate-gradient");
+            body.style.animation = body.classList.contains("animate-gradient")
+              ? "gradient 10s ease infinite"
+              : null;
+          } else {
+            body.style.animationPlayState =
+              body.style.animationPlayState === "running"
+                ? "paused"
+                : "running";
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div class="notfoundwindow">
+      <img
+        class="logo"
+        src="/assets/lankarta-logo-guestbook-vertical.png"
+        alt="lankarta logo"
+      />
+      <h1>Page Not Found</h1>
+      <p>
+        The requested page<br /><span style="color: #00f"
+          ><script type="text/javascript">
+            var papiez = location.href;
+            if (
+              papiez.indexOf("2137") > -1 ||
+              papiez.indexOf("jp2") > -1 ||
+              papiez.indexOf("wadowice") > -1 ||
+              papiez.indexOf("papiez") > -1
+              // papiez.indexOf("not_found") > -1
+            ) {
+              document.write(
+                `<details>
+                  <summary>
+                    <span style='color:#00f; font-size:0.7em;'>
+                      that contains holy words and numbers my fellow papieżowe memy enjoyer
+                    </span>
+                  </summary>
+                  <img src='/assets/papie_hotline_bling_vine.gif' />
+                </details>
+                `
+              );
+            } else {
+              document.write(location.href);
+            }
+          </script>
+          <noscript>you're looking for</noscript></span
+        ><br />
+        was not found or not created yet.
+      </p>
+      <p>
+        Go to <a href="javascript:history.back()">the previous page</a>, go
+        straight to <a href="/index.html">the main page</a> with sitemap or
+        write me in the
+        <a href="https://lankarta-project.atabook.org/">guestbook</a> that you
+        want that kind of page!
+      </p>
+    </div>
+  </body>
+</html>

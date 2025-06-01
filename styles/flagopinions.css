@@ -1,0 +1,89 @@
+            .flags-holder {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            .flags-container {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            .flag-item {
+                display: flex;
+                align-items: flex-start;
+                --flag-default-height: 5rem;
+            }
+
+            .flag-item img {
+                transition: all 0.5s ease;
+            }
+
+            .flag-item p {
+                display: none;
+                transition: all 0.5s ease;
+            }
+
+            /* Hidden Flag Opinions Layout */
+            .flags-container.default {
+                flex-direction: row;
+                align-items: flex-end;
+            }
+
+            .flags-container.default .flag-item {
+                flex-direction: column;
+            }
+
+            .flags-container.default .flag-item.official img {
+                height: var(--flag-default-height);
+            }
+
+            .flags-container.default .flag-item img {
+                height: 2rem;
+            }
+
+            /* Shown Flag Opinions Layout */
+            .flags-container.detailed {
+                flex-direction: column;
+            }
+
+            .flags-container.detailed .flag-item {
+                flex-direction: row;
+            }
+
+            .flags-container.detailed .flag-item img {
+                height: var(--flag-default-height);
+            }
+
+            .flags-container.detailed .flag-item p {
+                display: block;
+            }
+
+            .flags-container.detailed .left-column-flag {
+                display: flex;
+                min-width: 12rem;
+                width: 20%;
+            }
+
+            .flags-container.detailed .right-column-info {
+                display: flex;
+                flex-direction: column;
+            }
+
+            /*Button style*/
+            button {
+                margin: 5px;
+                padding: 5px 20px;
+                font-size: 0.8em;
+                cursor: pointer;
+                border: none;
+                background-color: #007bff;
+                color: white;
+                border-radius: 5px;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: #0056b3;
+            }
